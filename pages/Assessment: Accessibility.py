@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-dimension = "Accessibility"
+
 # Initialize session state for storing responses if not already done
 if 'responses' not in st.session_state:
     # Prefill all dimensions with a neutral value of 3
@@ -14,10 +14,9 @@ if 'responses' not in st.session_state:
         "Technology, Structure & Ecosystems": 3,
         "Simulation & Modelling": 3
     }
-if dimension not in st.session_state.responses:
-    st.session_state.responses[dimension] = {}
 
 # Survey questions for "Identity & Reputation"
+dimension = "Accessibility"
 subdimensions = {
     "Remote Access": [
         "For our Use-Case it is beneficial if one could control machines or similar remote entities remotely by leveraging a digital twin of the machine in its environment.",

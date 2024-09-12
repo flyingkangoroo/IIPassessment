@@ -17,8 +17,7 @@ if 'responses' not in st.session_state:
 
 # Survey questions for "Identity & Reputation"
 dimension = "Collaboration"
-if dimension not in st.session_state.responses:
-    st.session_state.responses[dimension] = {}
+
 subdimensions = {
     "Collaboration": [
         "Our Use-Case would benefit of an immersive virtual environment capable of imitating a corporate setting with various scenarios for collaborative use.",

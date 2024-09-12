@@ -17,8 +17,6 @@ if 'responses' not in st.session_state:
 
 # Survey questions for "Identity & Reputation"
 dimension = "Technology, Structure & Ecosystems"
-if dimension not in st.session_state.responses:
-    st.session_state.responses[dimension] = {}
 subdimensions = {
     "Technical Foundation": [
         "Our Use-Case has well-defined universal standards for sharing data and supporting interactions, resolving technical barriers.",

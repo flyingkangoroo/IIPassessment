@@ -17,8 +17,6 @@ if 'responses' not in st.session_state:
 
 # Survey questions for "Identity & Reputation"
 dimension = "Simulation & Modelling"
-if dimension not in st.session_state.responses:
-    st.session_state.responses[dimension] = {}
 subdimensions = {
     "Case Simulation": [
         "Our use-case provides sufficient sensor data to simulate a realistig and real-time 3D environment. We aim to use the resulting virtual replication can be used for simulation, visualization, and collaboration, using a set of interlinked, real-time layers of information.",
