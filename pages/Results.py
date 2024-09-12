@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -29,16 +28,16 @@ def plot_radar(categories, values, title="Radar Chart"):
 # Retrieve responses from session_state
 if 'responses' in st.session_state:
     responses = st.session_state.responses
-    # Process responses to get averages for each dimension
+    # Always get all the dimension names
     categories = list(responses.keys())
-    values = list(responses.values())
+    
+    # Get the actual values (or defaults) for each dimension
+    values = [responses[dimension] if dimension in responses else 3 for dimension in categories]
 
-    if values:
-        # Radar chart for the results
-        st.subheader("Results - Spider Web Chart")
-        fig = plot_radar(categories, values, title="Subdimension Averages")
-        st.pyplot(fig)
-    else:
-        st.write("No responses recorded yet. Please complete the assessment.")
+    # Radar chart for the results
+    st.subheader("Results - Spider Web Chart for Overall Dimensions")
+    fig = plot_radar(categories, values, title="Dimension Averages")
+    st.pyplot(fig)
+
 else:
     st.write("No responses found. Please complete the assessment first.")
