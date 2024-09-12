@@ -28,10 +28,11 @@ The assessment will guide you through the following eight empirical arised and v
 - **Technology, Structure & Ecosystems**
 - **Simulation & Modelling**
 
-Each of these dimensions has been carefully chosen to reflect key aspects of a business use-case and its potential as an IIP. You will answer a series of questions related to each dimension, and the results will be visualized in real time.
-The survey will save your answers unless you don't refresh your browser. This survey takes about 20minutes.
----
 
+Each of these dimensions has been carefully chosen to reflect key aspects of a business use-case and its potential as an IIP. You will answer a series of questions related to each dimension, and the results will be visualized in real time. The survey will save your answers unless you don't refresh your browser. This survey takes about 20minutes.
+
+---  
+            
 ### About This Tool
 
 Please note that this is only a **prototype**, developed as part of a **Master’s Thesis**. The creation of this assessment tool follows a **Design Science Research (DSR) approach**, which emphasizes building and evaluating artifacts to address real-world problems. 
