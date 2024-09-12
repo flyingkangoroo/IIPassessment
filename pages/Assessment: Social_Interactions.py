@@ -66,7 +66,7 @@ overall_dimension_score = np.mean(subdimension_scores)
 st.session_state.responses[dimension] = overall_dimension_score
 
 # Progress bar calculation (1/8 for the first page)
-progress = 1 / 8  # Adjust this number based on the current dimension page
+progress = 7 / 8  # Adjust this number based on the current dimension page
 st.progress(progress)
 
 # Navigation
