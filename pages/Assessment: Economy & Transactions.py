@@ -41,7 +41,7 @@ subdimensions = {
 }
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("in this section you should assess your usecase DESCRIBE!!!")
+st.write("This dimension identifies the needs for economic aspects of the virtual environment, including the creation, exchange, and management of virtual goods, services, and currencies.")
 subdimension_scores = []
 for subdimension, questions in subdimensions.items():
     st.subheader(subdimension)

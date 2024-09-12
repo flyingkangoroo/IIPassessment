@@ -59,7 +59,7 @@ subdimensions = {
 }
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("in this section you should assess your usecase DESCRIBE!!!")
+st.write("This dimension analyzes how important simulation and modeling tools are to create accurate, real-world representations within the virtual environment, allowing users to experiment, predict outcomes, and interact with digital twins of physical systems.")
 subdimension_scores = []
 for subdimension, questions in subdimensions.items():
     st.subheader(subdimension)

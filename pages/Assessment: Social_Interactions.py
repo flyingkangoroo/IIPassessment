@@ -46,7 +46,7 @@ subdimensions = {
 }
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("in this section you should assess your usecase DESCRIBE!!!")
+st.write("This dimension assesses the the importance of various ways in which users interact within the virtual environment, focusing on the quality of communication, the ability to collaborate, and the overall sense of community. Effective social interactions can be critical to creating a vibrant and engaging virtual ecosystem.")
 subdimension_scores = []
 for subdimension, questions in subdimensions.items():
     st.subheader(subdimension)

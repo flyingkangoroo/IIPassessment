@@ -35,7 +35,7 @@ subdimensions = {
 }
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("in this section you should assess your usecase DESCRIBE!!!")
+st.write("This dimension analyzes the relevance of mechanisms that allow users to collaborate on common goals in real time, emphasizing the importance of tools and features that support effective teamwork and task coordination within a virtual space.")
 subdimension_scores = []
 for subdimension, questions in subdimensions.items():
     st.subheader(subdimension)

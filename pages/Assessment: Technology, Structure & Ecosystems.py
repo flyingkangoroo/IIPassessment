@@ -51,7 +51,7 @@ subdimensions = {
 }
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("in this section you should assess your usecase DESCRIBE!!!")
+st.write("This dimension analyzes if there are underlying technology and structural aspects that support the virtual platform, including the system integration, scalability, and security measures that ensure a stable and reliable environment.")
 subdimension_scores = []
 for subdimension, questions in subdimensions.items():
     st.subheader(subdimension)

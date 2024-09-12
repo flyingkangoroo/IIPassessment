@@ -44,7 +44,7 @@ subdimensions = {
 }
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("in this section you should assess your usecase DESCRIBE!!!")
+st.write("This dimension figures out how important it is to make your use-case accessible to a wide range of people, including those with different abilities, and provides a user-friendly experience that can be easily adapted to different technological environments. ")
 subdimension_scores = []
 for subdimension, questions in subdimensions.items():
     st.subheader(subdimension)

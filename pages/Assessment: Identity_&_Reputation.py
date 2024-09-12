@@ -40,7 +40,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("in this section you should assess your usecase DESCRIBE!!!")
+st.write("This dimension focuses on how important the support of creation, management, and evolution of user identities, and the creation and maintenance of the users virtual reputation within the virtaul environment is. This includes degrees of immersion, personalization, and multiple forms of interaction and collaboration.")
 subdimension_scores = []
 for subdimension, questions in subdimensions.items():
     st.subheader(subdimension)

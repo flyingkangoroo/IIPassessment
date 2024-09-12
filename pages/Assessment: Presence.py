@@ -41,7 +41,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("in this section you should assess your usecase DESCRIBE!!!")
+st.write("""This dimension asses how important it is, that a user feels "present" in the virtual environment, achieved through realism, immersion, interaction, and emotional engagement. Presence is critical to ensuring that the virtual experience effectively and accurately simulates real-world scenarios or provides immersive, meaningful interactions.""")
 subdimension_scores = []
 for subdimension, questions in subdimensions.items():
     st.subheader(subdimension)
