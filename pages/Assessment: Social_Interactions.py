@@ -48,6 +48,7 @@ subdimensions = {
 st.title(f"Assessing the Dimension: {dimension}")
 st.write("This dimension assesses the the importance of various ways in which users interact within the virtual environment, focusing on the quality of communication, the ability to collaborate, and the overall sense of community. Effective social interactions can be critical to creating a vibrant and engaging virtual ecosystem.")
 subdimension_scores = []
+all_answered = True
 for subdimension, questions in subdimensions.items():
     st.subheader(subdimension)
     scores = []
@@ -56,7 +57,8 @@ for subdimension, questions in subdimensions.items():
                          index=2, key=f"{dimension}-{subdimension}-{question}")
         score_value = {'Strongly Disagree': 1, 'Somewhat Disagree': 2, 'Neutral': 3, 'Somewhat Agree': 4, 'Strongly Agree': 5}
         scores.append(score_value[score])
-    
+        if score is None:
+            all_answered = False
     # Calculate the average score for the subdimension and store in session state
     subdimension_average = np.mean(scores)
     subdimension_scores.append(subdimension_average)
@@ -64,6 +66,10 @@ for subdimension, questions in subdimensions.items():
 # Calculate the overall score for the dimension by averaging subdimension scores
 overall_dimension_score = np.mean(subdimension_scores)
 st.session_state.responses[dimension] = overall_dimension_score
+
+#insert "unfinished" warning
+if not all_answered:
+    st.warning("some questions are not answered. You can continue, but this might falsify your results. We recommend to doublecheck that you've answered all questions")
 
 # Progress bar calculation (1/8 for the first page)
 progress = 7 / 8  # Adjust this number based on the current dimension page
