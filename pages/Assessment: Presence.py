@@ -17,6 +17,8 @@ if 'responses' not in st.session_state:
 
 # Survey questions for "Identity & Reputation"
 dimension = "Presence"
+if dimension not in st.session_state.responses:
+    st.session_state.responses[dimension] = {}
 subdimensions = {
     "Immersion": [
         """We are planning on integrating the "human factor" in your IIP through accurate posutres, gestures and other human factors.""",
