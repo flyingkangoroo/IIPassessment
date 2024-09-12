@@ -5,4 +5,5 @@ st.write("This app allows you to assess various dimensions of a business use-cas
 
 st.sidebar("Menu")
 if st.button("Start Assessment"):
-    st.write("Navigate to the 'Assessment' page in the sidebar to begin!")
+    st.write("initializing")
+    st.page_link("assessment.py")
