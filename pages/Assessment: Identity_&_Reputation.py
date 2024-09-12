@@ -42,38 +42,53 @@ subdimensions = {
 st.title(f"Assessing the Dimension: {dimension}")
 st.write("This dimension focuses on how important the support of creation, management, and evolution of user identities, and the creation and maintenance of the users virtual reputation within the virtaul environment is. This includes degrees of immersion, personalization, and multiple forms of interaction and collaboration.")
 subdimension_scores = []
-all_answered = True
+all_answered = True  # A flag to track if all questions are answered
+
+# Loop through subdimensions and questions
 for subdimension, questions in subdimensions.items():
     st.subheader(subdimension)
     scores = []
     for question in questions:
-        score = st.radio(question, ('Strongly Disagree', 'Somewhat Disagree', 'Neutral', 'Somewhat Agree', 'Strongly Agree'), 
-                         index=2, key=f"{dimension}-{subdimension}-{question}")
+        # Generate a unique key for each question
+        question_key = f"{dimension}-{subdimension}-{question}"
+        
+        # Check if this question already has a saved answer in st.session_state.responses
+        if question_key in st.session_state.responses[dimension]:
+            saved_answer = st.session_state.responses[dimension][question_key]
+            initial_index = saved_answer - 1  # Convert saved score back to index (1-5 to 0-4)
+        else:
+            initial_index = 2  # Default to 'Neutral'
+
+        # Display the radio button with the previously selected value (if available)
+        score = st.radio(
+            question,
+            ('Strongly Disagree', 'Somewhat Disagree', 'Neutral', 'Somewhat Agree', 'Strongly Agree'),
+            index=initial_index, key=question_key
+        )
+
         score_value = {'Strongly Disagree': 1, 'Somewhat Disagree': 2, 'Neutral': 3, 'Somewhat Agree': 4, 'Strongly Agree': 5}
         scores.append(score_value[score])
-        if score is None:
-            all_answered = False
-    # Calculate the average score for the subdimension and store in session state
+
+        # Store the selected answer in session_state
+        st.session_state.responses[dimension][question_key] = score_value[score]
+    
+    # Calculate the average score for the subdimension
     subdimension_average = np.mean(scores)
     subdimension_scores.append(subdimension_average)
 
 # Calculate the overall score for the dimension by averaging subdimension scores
 overall_dimension_score = np.mean(subdimension_scores)
-st.session_state.responses[dimension] = overall_dimension_score
+st.session_state.responses[dimension]['overall'] = overall_dimension_score
 
-#insert "unfinished" warning
+# Alert if not all questions are answered (optional)
 if not all_answered:
-    st.warning("some questions are not answered. You can continue, but this might falsify your results. We recommend to doublecheck that you've answered all questions")
+    st.warning("Some questions are not answered. You can continue, but it is recommended to answer all questions.")
 
-# Progress bar calculation (1/8 for the first page)
-progress = 4 / 8  # Adjust this number based on the current dimension page
-st.progress(progress)
-
-# Navigation
+# Navigation buttons
 col1, col2 = st.columns([1, 1])
 
 if col1.button("Previous"):
-    st.write("Navigate to the previous page in the sidebar.")
+    st.write("Navigate to the previous page.")
 
 if col2.button("Next"):
-    st.write("Navigate to the next page in the sidebar.")
+    st.write("Navigate to the next page.")

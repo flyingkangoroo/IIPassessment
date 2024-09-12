@@ -25,19 +25,34 @@ def plot_radar(categories, values, title="Radar Chart"):
 
     return fig
 
-# Retrieve responses from session_state
+# Ensure responses exist in session_state
 if 'responses' in st.session_state:
     responses = st.session_state.responses
-    # Always get all the dimension names
-    categories = list(responses.keys())
-    
-    # Get the actual values (or defaults) for each dimension
-    values = [responses[dimension] if dimension in responses else 3 for dimension in categories]
+
+    # List of all dimensions that should appear in the chart
+    all_dimensions = [
+        "Identity & Reputation",
+        "Presence",
+        "Social Interactions",
+        "Collaboration",
+        "Accessibility",
+        "Economy & Transactions",
+        "Technology, Structure & Ecosystems",
+        "Simulation & Modelling"
+    ]
+
+    # Pre-fill all dimensions with a default score of 3 (neutral)
+    categories = all_dimensions
+    values = [3] * len(all_dimensions)
+
+    # Replace the default values with actual scores if available
+    for i, dimension in enumerate(all_dimensions):
+        if dimension in responses and isinstance(responses[dimension], dict) and 'overall' in responses[dimension]:
+            values[i] = responses[dimension]['overall']
 
     # Radar chart for the results
     st.subheader("Results - Spider Web Chart for Overall Dimensions")
     fig = plot_radar(categories, values, title="Dimension Averages")
     st.pyplot(fig)
-
 else:
     st.write("No responses found. Please complete the assessment first.")
