@@ -1,22 +1,21 @@
 import streamlit as st
 import numpy as np
 
+# Define the current dimension
+dimension = "Social Interaction"
+
 # Initialize session state for storing responses if not already done
 if 'responses' not in st.session_state:
-    # Prefill all dimensions with a neutral value of 3
-    st.session_state.responses = {
-        "Identity & Reputation": 3,
-        "Presence": 3,
-        "Social Interactions": 3,
-        "Collaboration": 3,
-        "Accessibility": 3,
-        "Economy & Transactions": 3,
-        "Technology, Structure & Ecosystems": 3,
-        "Simulation & Modelling": 3
+    st.session_state.responses = {}
+
+# Ensure the current dimension is initialized in the session state correctly
+if dimension not in st.session_state.responses or isinstance(st.session_state.responses[dimension], int):
+    # If dimension is missing or stored incorrectly as an int, initialize it properly
+    st.session_state.responses[dimension] = {
+        "questions": {},  # For storing individual question responses
+        "overall": 3  # Default overall score (can be updated later)
     }
 
-# Survey questions for "Identity & Reputation"
-dimension = "Social Interaction"
 subdimensions = {
     "Collaboration": [
         "Our IIP shall enable remote collaboration.",
@@ -46,21 +45,20 @@ subdimensions = {
 }
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("This dimension assesses the the importance of various ways in which users interact within the virtual environment, focusing on the quality of communication, the ability to collaborate, and the overall sense of community. Effective social interactions can be critical to creating a vibrant and engaging virtual ecosystem.")
+st.write("This dimension identifies the needs for economic aspects of the virtual environment, including the creation, exchange, and management of virtual goods, services, and currencies.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 
-# Loop through subdimensions and questions
 for subdimension, questions in subdimensions.items():
     st.subheader(subdimension)
     scores = []
     for question in questions:
         # Generate a unique key for each question
         question_key = f"{dimension}-{subdimension}-{question}"
-        
-        # Check if this question already has a saved answer in st.session_state.responses
-        if question_key in st.session_state.responses[dimension]:
-            saved_answer = st.session_state.responses[dimension][question_key]
+
+        # Check if this question already has a saved answer in st.session_state.responses[dimension]['questions']
+        if question_key in st.session_state.responses[dimension]["questions"]:
+            saved_answer = st.session_state.responses[dimension]["questions"][question_key]
             initial_index = saved_answer - 1  # Convert saved score back to index (1-5 to 0-4)
         else:
             initial_index = 2  # Default to 'Neutral'
@@ -75,9 +73,9 @@ for subdimension, questions in subdimensions.items():
         score_value = {'Strongly Disagree': 1, 'Somewhat Disagree': 2, 'Neutral': 3, 'Somewhat Agree': 4, 'Strongly Agree': 5}
         scores.append(score_value[score])
 
-        # Store the selected answer in session_state
-        st.session_state.responses[dimension][question_key] = score_value[score]
-    
+        # Store the selected answer in session_state under 'questions'
+        st.session_state.responses[dimension]["questions"][question_key] = score_value[score]
+
     # Calculate the average score for the subdimension
     subdimension_average = np.mean(scores)
     subdimension_scores.append(subdimension_average)

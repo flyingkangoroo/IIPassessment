@@ -1,22 +1,22 @@
 import streamlit as st
 import numpy as np
 
+# Define the current dimension
+dimension = "Accessibility"
+
 # Initialize session state for storing responses if not already done
 if 'responses' not in st.session_state:
-    # Prefill all dimensions with a neutral value of 3
-    st.session_state.responses = {
-        "Identity & Reputation": 3,
-        "Presence": 3,
-        "Social Interactions": 3,
-        "Collaboration": 3,
-        "Accessibility": 3,
-        "Economy & Transactions": 3,
-        "Technology, Structure & Ecosystems": 3,
-        "Simulation & Modelling": 3
+    st.session_state.responses = {}
+
+# Ensure the current dimension is initialized in the session state correctly
+if dimension not in st.session_state.responses or isinstance(st.session_state.responses[dimension], int):
+    # If dimension is missing or stored incorrectly as an int, initialize it properly
+    st.session_state.responses[dimension] = {
+        "questions": {},  # For storing individual question responses
+        "overall": 3  # Default overall score (can be updated later)
     }
 
-# Survey questions for "Identity & Reputation"
-dimension = "Accessibility"
+# Example questions for this dimension
 subdimensions = {
     "Remote Access": [
         "For our Use-Case it is beneficial if one could control machines or similar remote entities remotely by leveraging a digital twin of the machine in its environment.",
@@ -40,25 +40,25 @@ subdimensions = {
         "we want to design a shared digital ecosystem where ressources are shared and available on a global scale to a bigger population.",
         "We want to eliminate geographical barriers, which allows a global audience to participate in real time without physically traveling. This fact increases the attendance and the diversity of the inputs and perspectives to our use-case",
         "we want to give access to information, be more inclusive and making it universally available, fostering connections among individuals from diverse geographic backgrounds."
-    ]
+        ]
 }
+
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("This dimension figures out how important it is to make your use-case accessible to a wide range of people, including those with different abilities, and provides a user-friendly experience that can be easily adapted to different technological environments. ")
+st.write("This dimension identifies the needs for economic aspects of the virtual environment, including the creation, exchange, and management of virtual goods, services, and currencies.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 
-# Loop through subdimensions and questions
 for subdimension, questions in subdimensions.items():
     st.subheader(subdimension)
     scores = []
     for question in questions:
         # Generate a unique key for each question
         question_key = f"{dimension}-{subdimension}-{question}"
-        
-        # Check if this question already has a saved answer in st.session_state.responses
-        if question_key in st.session_state.responses[dimension]:
-            saved_answer = st.session_state.responses[dimension][question_key]
+
+        # Check if this question already has a saved answer in st.session_state.responses[dimension]['questions']
+        if question_key in st.session_state.responses[dimension]["questions"]:
+            saved_answer = st.session_state.responses[dimension]["questions"][question_key]
             initial_index = saved_answer - 1  # Convert saved score back to index (1-5 to 0-4)
         else:
             initial_index = 2  # Default to 'Neutral'
@@ -73,9 +73,9 @@ for subdimension, questions in subdimensions.items():
         score_value = {'Strongly Disagree': 1, 'Somewhat Disagree': 2, 'Neutral': 3, 'Somewhat Agree': 4, 'Strongly Agree': 5}
         scores.append(score_value[score])
 
-        # Store the selected answer in session_state
-        st.session_state.responses[dimension][question_key] = score_value[score]
-    
+        # Store the selected answer in session_state under 'questions'
+        st.session_state.responses[dimension]["questions"][question_key] = score_value[score]
+
     # Calculate the average score for the subdimension
     subdimension_average = np.mean(scores)
     subdimension_scores.append(subdimension_average)
