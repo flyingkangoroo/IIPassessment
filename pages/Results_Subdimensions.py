@@ -35,14 +35,28 @@ def get_subdimension_values(dimension, subdimensions):
             "overall": 3  # Default overall score
         }
     
-    # Fetch the values for each subdimension
-    values = []
-    for subdimension in subdimensions:
-        subdimension_key = f"{dimension}-{subdimension}"
-        # Default to 3 if no response is found for the subdimension
-        values.append(st.session_state.responses[dimension]["questions"].get(subdimension_key, 3))
+    # Initialize list to hold average values for each subdimension
+    subdimension_averages = []
     
-    return values
+    # Loop through each subdimension to calculate the average score
+    for subdimension in subdimensions:
+        subdimension_scores = []
+        
+        # Loop through the questions stored for each subdimension
+        for question_key in st.session_state.responses[dimension]["questions"]:
+            if subdimension in question_key:  # Check if the question belongs to the current subdimension
+                subdimension_scores.append(st.session_state.responses[dimension]["questions"][question_key])
+        
+        # Calculate the average score for the subdimension (default to 3 if no questions answered)
+        if subdimension_scores:
+            subdimension_average = np.mean(subdimension_scores)
+        else:
+            subdimension_average = 3  # Default to 3 if no scores for this subdimension
+
+        subdimension_averages.append(subdimension_average)
+    
+    return subdimension_averages
+
 
 # Dictionary with dimensions and their respective subdimensions
 dimensions = {
