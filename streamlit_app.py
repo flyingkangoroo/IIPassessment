@@ -12,7 +12,7 @@ if 'responses' not in st.session_state:
         "Technology, Structure & Ecosystems", "Simulation & Modelling"
     ]}
 
-st.title("Prototype: IIP-Assessment")
+st.title("Prototype: IIP-Assessment Model")
 st.markdown("""
 ### Welcome to the Business Use-Case Viability Assessment Tool
 
@@ -35,17 +35,18 @@ Each of these dimensions has been carefully chosen to reflect key aspects of a b
             
 ### About This Tool
 
-Please note that this is only a **prototype**, developed as part of a **Master’s Thesis**. The creation of this assessment tool follows a **Design Science Research (DSR) approach**, which emphasizes building and evaluating artifacts to address real-world problems. 
+Please note that this is only a **prototype**. The creation of this assessment tool follows a **Design Science Research (DSR) approach**, which emphasizes building and evaluating artifacts to address real-world problems. 
 
-This tool is intended for **demonstration purposes** only and should not be used as a final, comprehensive assessment solution.
+This tool is intended for **demonstration purposes** only and should not yet be used as a final, comprehensive assessment solution.
 
 ---
 
 ### How It Works
 
-1. You will assess each of the 8 core dimensions using a Likert scale, where you rate various statements from *Strongly Disagree* to *Strongly Agree*.
-2. The tool will dynamically calculate the average score for each dimension and present your results in a **spider chart** (also known as a radar chart) at the end of the assessment.
+1. You will assess your use-case alongsided of 8 core dimensions through reacting to various statements with term from *Strongly Disagree* to *Strongly Agree*.
+2. The tool will dynamically calculate the average score for each dimension and present your results in a **radar chart** at the end of the assessment.
 3. You can revisit any dimension at any time during the assessment to review or update your responses.
+4. ***WARNING:*** If you refresh your browser, all the data you've already entered will be lost. For this reason it is essential to navigate through the prototype using only the designated sidebar menu (left side of your screen!
 
 ---
 
@@ -57,7 +58,7 @@ This prototype was created in the context of a **Master's Thesis** as part of re
 
 ### Get Started
 
-To begin the assessment, navigate to the first dimension from the sidebar or click the button below.
+To begin the assessment, navigate to the first dimension from the sidebar.
 """)
 
 # Start assessment button

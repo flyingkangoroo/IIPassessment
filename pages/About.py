@@ -23,22 +23,17 @@ The construction of this model follows a **Design Science Research (DSR)** metho
 1. **Problem Identification**: 
    The lack of structured approaches for evaluating the viability of immersive platforms in industrial settings was identified as a gap in current research and practice.
 
-2. **Literature Review**: 
-   A **Systematic Literature Review (SLR)** was conducted to gather data on existing use-cases of the industrial metaverse, identifying over 262 unique characteristics that affect the viability of different use-cases.
+2. **Objectives of the solution**: 
+   requires preparing and conducting a systematic literature review (SLR) that intends to establish a design foundation for the artifact's dimensions. By identifying over 262 unique characteristics that affect the viability of different use-cases, we created the foundation for our IIP-Assessment Model.
 
-3. **Qualitative Interviews**: 
-   Following the SLR, **20 semi-structured interviews** were conducted with industry experts. These interviews helped refine the dimensions identified in the literature review and ensured that the model was aligned with real-world industrial needs.
+3. **Construction of the artifact**: 
+   We aim to make sense of the findings from the SLR by using **Grounded Theory** and the Gioia-Methodology to identify Core- and Subdimensions, and with that create the IIP-Assessment Model. 
+            
+4. **Evaluation Cycle**: 
+   We validated the IIP-Assessment model through 20 Interviews with knowledgable industry experts. This process allowed the refinement of the dimensions and ensured the relevance for real businesses.
 
-4. **Model Construction**: 
-   The data collected through the literature review and interviews were analyzed using **Grounded Theory** and the **Gioia Methodology**. This process allowed the development of a set of dimensions that guide the assessment of the viability of different industrial immersive platform use-cases.
-
----
-
-### Research Context
-
-This project is grounded in **Design Science Research (DSR)**, which emphasizes the creation of solutions that are both academically rigorous and practically applicable. The model provides valuable insights for businesses looking to expand into the industrial metaverse, helping decision-makers evaluate which use-cases offer the highest potential for success.
-
-The tool is a **prototype** and was developed specifically as part of a **Master’s Thesis** in **Business Innovation**. The research draws from recent advances in **Industry 4.0** technologies, such as **Virtual Reality (VR)**, **Augmented Reality (AR)**, and **Mixed Reality (MR)**, and applies them to industrial use-cases.
+5. **Communication Stage**:
+   inally, the results gathered during the evaluation phase are used to create a definitive product & publish the results. 
 
 ---
 
