@@ -75,6 +75,10 @@ for subdimension, questions in subdimensions.items():
 overall_dimension_score = np.mean(subdimension_scores)
 st.session_state.responses[dimension]['overall'] = overall_dimension_score
 
+# Display progress
+progress = 2 / 8  # second dimension of eight
+st.progress(progress)
+
 # Alert if not all questions are answered (optional)
 if not all_answered:
     st.warning("Some questions are not answered. You can continue, but it is recommended to answer all questions.")
