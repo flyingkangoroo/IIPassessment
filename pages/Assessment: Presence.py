@@ -19,10 +19,11 @@ if dimension not in st.session_state.responses or isinstance(st.session_state.re
 subdimensions = {
     "Immersion": [
         """We are planning on integrating the "human factor" in your IIP through accurate posutres, gestures and other human factors.""",
-        "We want the stakeholders of our use-case to experience sensory feedback from the partners in metaverse, such as body language, facial expressions, and eye contact.",
+        "We want the stakeholders of our use-case to experience sensory feedback from the partners in our IIP, such as body language, facial expressions, and eye contact.",
         "We want to integrate the features ‘immediacy’ and ‘low latency’, ‘virtuality’ and ‘virtual identity’ to enhance the immersiveness.",
         "Creating a high-quality consumer experience through the creation of realistic environmental simulations could enhance our use-case.",
-        "Generating a sense of presence in a virtual environment such that the user can act and behave as if the IIP environment is real, thereby enabling scenarios or experiments otherwise difficult to reproduce in the real world. immersion in IIPs can help our users to focus on actually experiencing the provided content rather than grasping just the interface would benefit our use-case."
+        "Generating a sense of presence in a virtual environment such that the user can act and behave as if the IIP environment is real, thereby enabling scenarios or experiments otherwise difficult to reproduce in the real world. immersion in IIPs can help our users to focus on actually experiencing the provided content rather than grasping just the interface would benefit our use-case.",
+        "We want to strengthen our use-case awareness, positioning, branding and/ or management through integrating an IIP."
         ],
     "Sensors": [
         "Our IIP should enables users to mobilize their eyes, ears, mouth, nose and other body senses through precreated simulations and interactive devices such as head-mounted displays, earphones, handles and data gloves, and achieve their goals through different ways such as voice, movement, eye movements and gestures, thus achieving a nearly natural and “personal experience” interaction.",
