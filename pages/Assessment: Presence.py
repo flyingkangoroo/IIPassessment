@@ -27,7 +27,7 @@ subdimensions = {
         ],
     "Sensors": [
         "Our IIP should enables users to mobilize their eyes, ears, mouth, nose and other body senses through precreated simulations and interactive devices such as head-mounted displays, earphones, handles and data gloves, and achieve their goals through different ways such as voice, movement, eye movements and gestures, thus achieving a nearly natural and “personal experience” interaction.",
-        "Our use-case would profit from an integration of modern sensors for a precise visualization of gestures, postures, facial expressions and movements.",
+        "We want to allow users to engage in an authentic and immersive way by integrating the sensors for precise visualization of gestures, postures, facial expressions and movements.",
         "We recreate physical real-world experiences through the integration of haptic feedback technologies.",
         "We plan on overlaying digital visual stimuli onto the real world to vitalize real-world experiences and create a more engaging experience.",
         "We make sure to integrate the necessary sensors to minimize the chance of misunderstandings and erroneous judgements through non-verbal communicationcues"
