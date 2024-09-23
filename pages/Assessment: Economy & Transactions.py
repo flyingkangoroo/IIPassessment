@@ -18,24 +18,19 @@ if dimension not in st.session_state.responses or isinstance(st.session_state.re
 
 subdimensions = {
     "Business Expansion": [
-        "We wish for a new space for brand exposure to new customers and an additional channel of communication with existing consumers.",
-        "We want to create several opportunities for new consumer products",
-        "We want to create new Business Model opportunities, such as the virtual promotion of real-world products through the sale of a virtual model corresponding to a real and unique object, and the offering of virtual goods, contents, and services existing only in the virtual realm and unrepeatable in the real world due to physical constraints.",
-        "We want to improve our production processes by integrating more data, better visualization, or similar advantages.",
-        "We want to solve problems and perform tasks that are difficult or impossible to solve and conduct in real life, such as dangerous chemical experiments, lack of space for organizing events, and exploring outer space or ancient history."
+        "New Business Models: Our use-case benefits from the development of new business models and opportunities, such as virtual goods, digital ownership, and additional distribution channels through an IIP.",
+        "Virtual Retail: The integration of an IIP could enable new virtual retail channels and consumer products, offering our use-case opportunities for growth.",
+        "Expanding Customer Reach: Our use-case would benefit from expanding our brand exposure to new customers and offering new communication channels with existing consumers through a virtual environment.",
+        "Enhanced Problem Solving: Our use-case can address difficult or impossible real-life problems (e.g., dangerous tasks, space limitations) through the enhanced capabilities provided by an IIP."
     ],
     "Customer Satisfaction": [
-        "We want to enhance consumer/ user engagement.",
-        "We want to better satisfy the needs of our Users/ Consumers than our current solution and think the development of an IIP could help."
-        "We want to include decentralized financial transactions through blockchain systems and hyper-personalization opportunities."
-        """We need to satisfy "experience-oriented" customers/ users."""
+        "Customer Engagement: Our use-case would benefit from enhanced customer satisfaction by improved user engagement, experience-oriented services, and the motivation of users to share their experiences with others as well as stronger transparency and immutability features.",
+        "Meeting Customer Needs: Our use-case benefits from better satisfying user needs and offering hyper-personalized services through the integration of an IIP."
     ],
-        "Operations": [
-        "Our IIP plays an important role in our next generation of manufacturing systems because it allows simulation results to be shown in a realistic, intuitive, economic and safe way.",
-        "Enabling an exact production of our users needs, that are better monitored through our platform could be beneficial for our use-case.",
-        "We believe that enhancing operational flexibility and giving a view to the performance and operating conditions based on real-time data, can be leveraged to enable better decision-making in operations such as condition monitoring, function simulation, evolution simulation, dynamic scheduling, predictive maintenance, and quality control.",
-        "We want to enable training with rare/ expensive/ unique materials thanks to according simulation.",
-        "We believe that implementing an IIP in existing manufacturing systems adds value through decreasing scrap and rework, reducing unscheduled downtime, reducing compliance costs, increasing throughput and improving training."
+    "Operations": [
+        "Operational Flexibility: Our use-case benefits from enhancing operational flexibility and making better decisions by leveraging real-time data and IIP-based simulations.",
+        "Safe Environments: We want to improve our training processes and workforce performance by using safe, cost-effective simulations of unique or expensive materials within an IIP.",
+        "Decentralized Operations: Our use-case would benefit from decentralized operations, overcoming geographical restrictions and enabling direct peer-to-peer transactions through a blockchain-based IIP."
     ]
 }
 # Collect responses
