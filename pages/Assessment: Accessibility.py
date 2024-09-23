@@ -30,7 +30,7 @@ subdimensions = {
         "Flexible and Repeatable Operations: Our use-case benefits from being flexible in terms of space, time, and repetition of actions, which increases productivity and efficiency.",
         "Virtual Recreational Goods: The ability to create endless copies of virtual goods and recreational content within a repeatable environment benefits our use-case."
         ],
-        "Public Access": [
+    "Public Access": [
         "Inclusivity: Our use-case benefits from providing equal access to knowledge, digital goods, and services regardless of users' geographical location, economic status, or knowledge level.",
         "Global Participation: Enabling a global audience to participate and collaborate in real-time through our IIP increases diversity, access, and involvement.",
         "Broader Access: Our use-case benefits from giving users access to exclusive or otherwise restricted experiences, operations, or events through our IIP.",
