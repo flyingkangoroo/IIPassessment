@@ -18,22 +18,19 @@ if dimension not in st.session_state.responses or isinstance(st.session_state.re
 
 subdimensions = {
     "Personalization": [
-        "A Configuration of our use-case would benefit our customer/ user.",
-        "The Identity of our Customer/ User is relevant for our Product/ Service.",
-        "The customization of our use-case environment benefits the Customer/ User.",
-        "We prefer individual instead of ‘one-size-fits-all’ solutions.",
-        "We recognize hyper-personalization as an opportunity for development."
+        "Customization: Our use-case benefits from the customization of products/services to meet the individual needs of customers/users.",
+        "Individual Needs: The identity and individual characteristics of our customers/users are crucial for tailoring our products/services.",
+        "Hyper-Personalization: We see hyper-personalization and personalized digital tools as opportunities to offer tailored services, products, and production management solutions. "
     ],
     "Sociability": [
-        "We want Customers/ Users to get engaged at different levels by expressing brand desire.",
-        "We want customers with similar interests/ problems to interact with each other.",
-        "We think that avatar-mediated communication is more diversified than text-based communication.",
-        "We could imagine our customer journey in a gameificated way to enhance user motivation."
+        "Engagement: Our use-case can improve customer/user engagement by fostering social interaction and communication through virtual environments, such as avatars or simulated face-to-face interaction.",
+        "Shared Experience: Our use-case benefits from allowing users with similar interests to share experiences, advice, and emotional responses in a virtual environment.",
+        "Inclusion: Incorporating inclusive and empathetic virtual experiences aligns with societal goals and could enhance our use-case." 
     ],
     "Users": [
-        "We are considering user diversity when designing the platform.",
-        "Personalization of our product could better fulfill customer needs.",
-        "We plan on adding a social interaction space for the stakeholder of our use-case"
+        "User Motivation: Our use-case can benefit from creating a social platform where users share their experiences, thereby attracting potential users.",
+        "Segmentation: We consider user diversity and segment users into specific groups to provide personalized strategies for our use-case.",
+        "Virtual Identity: Providing users with unique virtual identities to conduct social activities (learning, working, socializing) could enhance our use-case."
     ]
 }
 
