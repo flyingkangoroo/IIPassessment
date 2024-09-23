@@ -18,34 +18,25 @@ if dimension not in st.session_state.responses or isinstance(st.session_state.re
 
 subdimensions = {
     "Technical Foundation": [
-        "Our Use-Case has well-defined universal standards for sharing data and supporting interactions, resolving technical barriers.",
-        "We have numerous sensors, smart terminals, and other IoT devices to provide support for data collection, processing and transmission within our IIP."
-        "We want to integrate advances in computing technology, in particular graphical processing units, together with advanced display technologies embedded in current state-of-the-art head-mounted displays to our use-case. This allow us to experience photorealistic digital worlds at resolutions in which individual pixels are no longer distinguishable by human eyes.",
-        "We have the resources and the knowhow to use modern technology to support the creation of a realistic IIP.",
-        "Our use-case has a tangible number of clearly defined features.",
-        "We know about upcoming dataprivacy and security challenges and will adress them accordingly.",
-        "We don't face problems with cost and difficulty of technology development, content production cycles, social ethics, data privacy, or similar issues in our Use-Case."
+        "Resources, Infrastructure, and Realism: Our use-case benefits from having the necessary resources, infrastructure, and modern technology to create a realistic, interoperable, and scalable IIP.",
+        "Data Standards and Privacy: Our use-case has well-defined data standards, governance, and privacy protections to ensure smooth data sharing and technical security.",
+        "Integration of Advanced Devices: Our use-case benefits from integrating IoT devices, sensors, and advanced processing technologies that enhance data collection, visualization, and interaction within the IIP.",
+        "Scalability and User Access: We have access the necessary technology, equipment, and technical infrastructure to ensure that all users can fully engage with an IIP, supported by the appropriate tools, output devices, and operators for seamless interaction with real-world environments.",
+        "Technology Acceptance: Our use case is defined by clear features, fosters user adoption through understanding key influencing factors, and leverages well-structured data with ongoing efforts to reduce latency and enhance IIP quality"
     ],
     "Real-Time Processing": [
-        "Our use-case would benefit of an remote manipulateable, real-time mapping within an IIP environment.",
-        "Our use-case would benefit of real-time case sensitive data.",
-        "We want to offer a wide range of applications that necessitate real time access to physical environment information.",
-        "Our use-case would benefit from a simulation displayed virtually in real time.",
-        "We believe that an IIP could support our value chain by building a real world simulation to predict and optimize the future and support the prescription on the real system running  parallel to the artificial ones.",
-        "We have a multidisciplinary understanding that is facilitated at multiple levels to face the exploitation of the data and analytics."
+        "Real-Time Mapping: Our use-case benefits from real-time mapping and data handling with standardized data formats, protocols, and interfaces, which enhance operations, decision-making, and system optimization within the IIP.",
+        "Predictive Systems: Our use-case would benefit from real-time simulations and predictive systems that improve quality, efficiency, and cost-effectiveness in operations.",
+        "Real-Time Interaction: Real-time user interactions with objects and avatars in the IIP enhance our use-case by improving engagement and collaboration."  
     ],
     "Interoperability": [
-        "We want our use-case to be more realistic, accessable, interoperable, and scalable.",
-        "Increasing the interoperability across platforms and allowing users to develop and share content between virtual world, can be beneficial for our use-case.",
-        "As the number of data and modernized devices increases, we recognize interoperability as a challenge of our use-case",
-        "We have a group of multi-disciplinary experts that can aggregate their capabilities to work on an IIP.",
-        "We want to enhance operational flexibility and gain a view to our performance and operating conditions based on real-time data that can be leveraged to enable better decision-making in operations such as condition monitoring, function simulation, evolution simulation, dynamic scheduling, predictive maintenance, and quality control."
+        "Cross-Platform Access: Ensuring interoperability across platforms, devices, and departments improves our use-case by enabling seamless data exchange and collaboration",
+        "Operational Flexibility: Increasing interoperability within our use-case allows us to improve operational flexibility and real-time performance monitoring.",
+        "Interdisciplinary Collaboration: Our use-case benefits from interdisciplinary collaboration and systematic methodologies that support high-level automation and decision-making."
     ],
     "Ecosystem": [
-        "We want to achieve a truly immersive user experience with synchronized realities out of our use-case.",
-        "Enabling immersive user engagement in a rich set of applications by all available human senses and personal metadata could benefit our use-case.",
-        "Modelling our factories’ processes and connecting pieces of equipment across all production lines, could enable us to monitor high percentages of supply flows constantly, in a system and through this could benefit our use-case by using new data to refine redictive maintenance, reduce the downtime caused by stoppages and repairs, and drive greater precision in applications.",
-        "We plan on operating on decentralized systems that use distributed ledger technology to record transactions and manage operations."
+        "Immersive User Engagement	Our use-case benefits from creating a truly immersive experience where users engage with applications using a wide range of sensory inputs.",
+        "Decentralized Systems	Our use-case benefits from operating on decentralized systems and involving stakeholders effectively within the IIP."
     ]
 }
 # Collect responses
