@@ -19,27 +19,22 @@ if dimension not in st.session_state.responses or isinstance(st.session_state.re
 # Example questions for this dimension
 subdimensions = {
     "Remote Access": [
-        "For our Use-Case it is beneficial if one could control machines or similar remote entities remotely by leveraging a digital twin of the machine in its environment.",
-        "It could be beneficial for our use-case if users could access data and control parameters through a digital representation of the physical object.",
-        "We want to break space, time or ressource constraints by enabling remote access in our use-case.",
-        "We need to enable human-human interactions, where they are not feasible in the real-world.",
-        "We want to bridge geographical disparities by enabling users in underserved regions to collaborate seamlessly with distant counterparts, thereby expanding opportunities for support and collaboration.",
-        "Enabling human-human and human-machine interactions regardless of their geographical location could be beneficial for our use-case.",
-        "We think that accessibility without the constraints of the real world and therefore also ensuring sustainability in the face of unpredictable crises and challenges would secure a bright future for our use-case."
+        "Remote Control: Our use-case benefits from enabling remote access and control of machines, physical objects, and environments through digital twins or other IIP technologies.",
+        "Breaking Geographical and Time Constraints: Our use-case would benefit from eliminating geographical and time constraints, allowing users to interact and collaborate remotely across regions.",
+        "Human-Human and Human-Machine Interactions: Our use-case benefits from enabling human-human and human-machine interactions regardless of geographical location, enhancing collaboration and communication.",
+        "Remote Monitoring and Automation: Our use-case benefits from the integration of remote monitoring, real-time data access, and automated task management.",
+        "Safety and Sustainability: Remote work and access ensure user safety, sustainability, and the ability to adapt to unpredictable crises and challenges."
     ],
     "Repeatability": [
-        "Enabling unlimited repetitions of tasks that usually cost large amounts of ressources, are dangerous, or have similar restrictions could be beneficial for our use-case.",
-        "Enabling users to experience educational consequences of their actions, without hurting themselfs could be beneficial for our use-case.",
-        "We think it could be beneficial to afford the user the ability to experience hazardous situations while never compromising his/her safety and health in our use-case.",
-        "We think that endless copies of virtual goods within a remotely accessable environment could be beneficial for our use-case.",
-        "The unlimited poissibility of repeating actions in a safe environment could be beneficial for our use-case."
+        "Safe and Cost-efficient Simulations: Our use-case benefits from the ability to simulate real-world actions repeatedly in a safe environment, reducing costs, risks, and resource usage.",
+        "Flexible and Repeatable Operations: Our use-case benefits from being flexible in terms of space, time, and repetition of actions, which increases productivity and efficiency.",
+        "Virtual Recreational Goods: The ability to create endless copies of virtual goods and recreational content within a repeatable environment benefits our use-case."
         ],
         "Public Access": [
-        "We want to provide equal opportunities for every user regardless of their current knowledge level, economic circumstances, or social status by creating an IIP.",
-        "It could be beneficial for our use-case if operations where operateable for everyone, regardless of the users geographical location.",
-        "we want to design a shared digital ecosystem where ressources are shared and available on a global scale to a bigger population.",
-        "We want to eliminate geographical barriers, which allows a global audience to participate in real time without physically traveling. This fact increases the attendance and the diversity of the inputs and perspectives to our use-case",
-        "we want to give access to information, be more inclusive and making it universally available, fostering connections among individuals from diverse geographic backgrounds."
+        "Inclusivity: Our use-case benefits from providing equal access to knowledge, digital goods, and services regardless of users' geographical location, economic status, or knowledge level.",
+        "Global Participation: Enabling a global audience to participate and collaborate in real-time through our IIP increases diversity, access, and involvement.",
+        "Broader Access: Our use-case benefits from giving users access to exclusive or otherwise restricted experiences, operations, or events through our IIP.",
+        "Information Sharing: The transfer of real-world information to a digital platform enables faster dissemination of knowledge and collaborative manufacturing."
         ]
 }
 
