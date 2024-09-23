@@ -19,18 +19,14 @@ if dimension not in st.session_state.responses or isinstance(st.session_state.re
 # Example questions for this dimension
 subdimensions = {
     "Collaboration": [
-        "Our Use-Case would benefit of an immersive virtual environment capable of imitating a corporate setting with various scenarios for collaborative use.",
-        "Our Use-Case would benefit by an IIP-enabled multi-party collaborative manufacturing.",
-        "We think that a a virtual workspace with natural interaction, prompt communication and a high immersion could benefit our use-case.",
-        "In our use-case the creation, copy, maintenance, selling or exchanging of contents is important to the users.",
-        "We want to enable collaboration when traditional real-world interactions are not feasible.",
-        "We want to enable stakeholders to collaborate in several ways such as engaging in discussions or analyzing cases from different perspectives."
+        "Virtual Workspaces: Our use-case would benefit from an immersive virtual environment that reflects the corporate setting and includes collaborative spaces like meeting rooms, training rooms, and simulation rooms.",
+        "Remote Collaboration: Enabling multi-party collaboration, especially when real-world interactions are not feasible, would enhance our use-case.",
+        "Content Sharing: Our use-case benefits from interoperability across platforms and the ability to create, maintain, and share content between virtual worlds."
     ],
     "Co-Creation": [
-        "We want our users to participate in specific activities and events together and simultaneously with other participants."
-        "It would be beneficial for our use-case if stakeholders were interested in cocreating the offering.",
-        "We want to benefit from a re-ignited power of user-generated content by previous consumers, and ultimately, optimize the value co-creation process both before, during, and after consumers’ experiences."
-        "Our Users can self-construct their knowledge and values based on their original knoledge structures."
+        "User-Generated Content: Our use-case benefits from enabling users to generate content and participate in co-creative activities, such as producing and editing virtual environments.",
+        "Collaborative Productivity: Our use-case benefits from allowing users to design their personal work environment, set their own pace, and build knowledge through co-creation.",
+        "Stakeholder Involvement: Involving high-engagement stakeholders in the co-creation process enhances our use-case by stimulating their interest and contributions."
     ]
 }
 
