@@ -18,29 +18,21 @@ if dimension not in st.session_state.responses or isinstance(st.session_state.re
 
 subdimensions = {
     "Collaboration": [
-        "Our IIP shall enable remote collaboration.",
-        "Our IIP could function as a virtual workspace with natural interaction, prompt communication and a high immersion.",
-        "The creation of communities and the active participation within them could be benefitial for our use-case.",
-        "Enabling stakeholders to collaborate in several ways such as engaging in discussions or analyzing cases from different perspectives is beneficial for our use-case.",
-        "Enabling collaborative interactions between users is a goal."
+        "Remote & Virtual Collaboration: Our use-case would benefit from immersive virtual environments that simulate corporate settings and include collaborative spaces like meeting rooms, training rooms, and workspaces.",
+        "Community Participation: Our use-case would benefit from enabling multi-party collaboration and remote collaboration when traditional real-world interactions are not feasible."
     ],
     "Interactive Environment": [
-        "A seamless connectivity between users and users, between users and platforms, between platforms and platforms, and between operating systems and operating systems is beneficial for our use-case.",
-        "We want to integrate social elements through interactivity, new interaction modalities with plenty of opportunities for novel social networking and community development in our use-case.",
-        "Enabling proactive interactions across the real and virtual world could be beneficial for our use-case.",
-        ],
+        "Social Interaction Spaces: Our use-case would benefit from the creation of social interaction spaces where users can seamlessly interact with each other and with the system.",
+        " Social Networking	Seamless connectivity between users, platforms, and operating systems enhances our use-case by fostering smoother interactions."
+    ],
     "Communication": [
-        "We want our users to share experiences, give advice, and support others within the IIP.",
-        "If our users could remotely check on tasks, and communicate to update each other on task status, it would help our workflow.",
-        "We aim to build designated virutal work spaces (such as Meeting Rooms, Collaboration Rooms, Training Rooms, Simulation Rooms, Interview Rooms) for our workers.",
-        "We want to enable our users to have the opportunity to observe and actively participate in interactions with other users.",
-        "We wish for an additional channel of communication with existing Users, Customers."
+       "Avatar-Mediated Communication: Avatar-mediated communication, including non-verbal cues like gestures and facial expressions, improves user experience and fosters better interactions in our use-case.",
+        "Experience Sharing: Our use-case benefits from enabling users to share experiences, provide advice, and support others through virtual interactions.",
+        "Collaboration Tools: The use-case can be improved by enabling remote task management, collaboration rooms, and communication updates between users."
     ],
     "Interaction": [
-        "we want our users to experience sensory feedback from the stakeholders within the new IIP, such as body language, facial expressions, and eye contact.",
-        "We believe that successful interactions and creating an immersive environment can be beneficial for our use-case.",
-        "We want to simulating face-to-face interactions within our IIP to enhance our day-to-day interactions.",
-        "We want to foster user-user interaction in our use-case."
+        "Simulated Interactions	Simulating face-to-face interactions and providing sensory feedback, such as body language and eye contact, enhances user engagement in our use-case.",
+        "Enhanced User Interaction	Our use-case benefits from enabling users to interact with digital objects in real-time through various sensory and interactive modalities."
     ]
 }
 # Collect responses
