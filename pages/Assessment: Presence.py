@@ -46,7 +46,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("This dimension identifies the needs for economic aspects of the virtual environment, including the creation, exchange, and management of virtual goods, services, and currencies.")
+st.write("Asses how important it is, that a user feels 'present' in the virtual environment, achieved through realism, immersion, interaction, and emotional engagement. Presence is critical to ensuring that the virtual experience effectively and accurately simulates real-world scenarios or provides immersive, meaningful interactions.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 
