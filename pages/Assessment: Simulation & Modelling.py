@@ -40,7 +40,7 @@ subdimensions = {
 }
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("This dimension identifies the needs for economic aspects of the virtual environment, including the creation, exchange, and management of virtual goods, services, and currencies.")
+st.write("How important are simulation and modeling tools to create accurate, real-world representations within the virtual environment, allowing users to experiment, predict outcomes, and interact with digital twins of physical systems.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 
